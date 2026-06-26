@@ -293,7 +293,7 @@ grid.innerHTML=html;
 
 }
 
-
+/* ZOOM PREVIEW */
 
 function initializeProductModals(){
 
@@ -325,8 +325,7 @@ cardBox.closest(
 '.sns-product-card'
 );
 
-document.getElementById('m-img').src=
-pCard.getAttribute('data-img');
+document.getElementById('m-img').src = "Image/" + pCard.getAttribute('data-img');
 
 document.getElementById('m-name').innerText=
 pCard.getAttribute('data-name');
@@ -393,7 +392,9 @@ modal.classList.remove('open');
 }
 
 
-
+/* ===================================
+LOGIN / SIGNUP MODAL CONTROL
+=================================== */
 const peAuthModal=
 document.getElementById(
 'pe-auth-modal'
