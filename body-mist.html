@@ -322,105 +322,92 @@ ZOOM MODAL
 function initializeProductModals(){
 
 const modal=
+document.getElementById('sns-zoom-modal');
 
-document.getElementById(
-"sns-zoom-modal"
+if(!modal) return;
+
+const cards=
+document.querySelectorAll(
+'.sns-product-card .card-image-box'
 );
 
-if(!modal)
-return;
+const closeX=
+document.querySelector(
+'.modal-close-x'
+);
 
 
-document
+cards.forEach(cardBox=>{
 
-.querySelectorAll(
-".card-image-box"
-)
-
-.forEach(card=>{
-
-
-card.addEventListener(
-
-"click",
+cardBox.addEventListener(
+'click',
 
 ()=>{
 
-
-const p=
-
-card.closest(
-".sns-product-card"
+const pCard=
+cardBox.closest(
+'.sns-product-card'
 );
 
+document.getElementById('m-img').src = "Image/" + pCard.getAttribute('data-img');
 
-document.getElementById(
-"m-img"
-).src=
-p.dataset.img;
+document.getElementById('m-name').innerText=
+pCard.getAttribute('data-name');
 
+document.getElementById('m-price').innerText=
+pCard.getAttribute('data-price');
 
-document.getElementById(
-"m-name"
-).innerText=
-p.dataset.name;
+document.getElementById('m-top').innerText=
+pCard.getAttribute('data-top');
 
+document.getElementById('m-heart').innerText=
+pCard.getAttribute('data-heart');
 
-document.getElementById(
-"m-price"
-).innerText=
-p.dataset.price;
+document.getElementById('m-base').innerText=
+pCard.getAttribute('data-base');
 
+const waMsg=
+encodeURIComponent(
 
-document.getElementById(
-"m-top"
-).innerText=
-p.dataset.top;
+`Hello Perfume Expert, I want to order ${pCard.getAttribute('data-name')} listed at ${pCard.getAttribute('data-price')}.`
 
-
-document.getElementById(
-"m-heart"
-).innerText=
-p.dataset.heart;
-
-
-document.getElementById(
-"m-base"
-).innerText=
-p.dataset.base;
-
-
-document.getElementById(
-"m-wa-link"
-).href=
-
-`https://wa.me/923001234567`;
-
-
-modal.classList.add(
-"open"
 );
+
+document.getElementById('m-wa-link').href=
+
+`https://wa.me/923001234567?text=${waMsg}`;
+
+modal.classList.add('open');
 
 });
 
 });
 
 
-document
+if(closeX){
 
-.querySelector(
-".modal-close-x"
-)
+closeX.addEventListener(
 
-?.addEventListener(
+'click',
 
-"click",
+()=>modal.classList.remove('open')
 
-()=>{
-
-modal.classList.remove(
-"open"
 );
+
+}
+
+
+modal.addEventListener(
+
+'click',
+
+(e)=>{
+
+if(e.target===modal){
+
+modal.classList.remove('open');
+
+}
 
 }
 
