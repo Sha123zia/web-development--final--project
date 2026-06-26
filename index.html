@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+     <meta name="viewport" content="width=1200">
+    <title>Perfume Expert | House of Fragrance</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>  
+     <header class="sns-header">
+
+        <nav class="categories-nav">
+            <div class="nav-container-wrapper">
+                
+                <!-- Logo Shifted to the Left Side -->
+                <div class="brand-logo-area">
+                    <a href="#" class="main-logo-link">
+                        <img src="Image/new.png" alt="Perfume Expert Logo" class="brand-logo-img">
+                
+                    </a>
+                </div>
+                <ul class="nav-links-strip">
+                    <li><a href="index.html" class="nav-home-link"><i class="fas fa-home"></i> HOME</a></li>
+                    <li><a href="men.html">SHOP MEN</a></li>
+                    <li><a href="women.html">SHOP WOMEN</a></li>
+                    <li><a href="body-mist.html">BODY MIST</a></li>
+                    <li><a href="room-fresher.html">ROOM AMBIENCE</a></li>
+                    <li><a href="#" class="nav-login-btn" onclick="openAuthModal('login'); return false;"><i class="fas fa-user"></i> LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="glass-intro-section">
+        <div class="video-bg-container">
+             <video autoplay loop muted playsinline class="hero-bg-video">
+                <!-- <source src="i like perfumes(720P_HD).mp4" type="video/mp4">  -->
+                <source src="video/herovideo.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay-tint"></div>
+        </div>
+
+        <div class="glass-card-viewport">
+            <div class="glass-card-grid">
+                <div class="glass-content-text">
+                    <span class="intro-mini-tag">THE ART OF PERFUMERY</span>
+                    <h1 class="intro-main-title">Liquid Memories</h1>
+                    <p class="intro-description">
+                        Every bottle is a carefully engineered masterpiece, blending nature's finest extracts to create an everlasting aura. Experience ultra-premium luxury concentrations designed for maximum sillage and projection.
+                    </p>
+                    
+                    <div class="scent-notes-pics-row">
+                        <div class="note-pic-item">
+                            <div class="img-circle-wrapper">
+                                <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?auto=format&fit=crop&w=150&q=80" alt="Top Notes">
+                            </div>
+                            <h5>TOP NOTES</h5>
+                        </div>
+                        <div class="note-pic-item">
+                            <div class="img-circle-wrapper">
+                                <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=150&q=80" alt="Heart Notes">
+                            </div>
+                            <h5>HEART NOTES</h5>
+                        </div>
+                        <div class="note-pic-item">
+                            <div class="img-circle-wrapper">
+                                <img src="Image/Vanilla_Patchouli_Sandalwood_2000x.webp" alt="Base Notes">
+                            </div>
+                            <h5>BASE NOTES</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-showcase-media">
+                    <img src="Image/1782236994119.jpg" alt="Classy Perfume Bottle" class="showcase-bottle-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-directory-section">
+        <div class="directory-container">
+            <h2 class="directory-main-heading">Explore Our Houses</h2>
+            <p class="directory-sub-heading">Select a curated collection to discover your signature premium scent architectural trail.</p>
+            
+            <div class="directory-flex-grid">
+                <a href="men.html" class="directory-card-item">
+                    <img src="Image/image.png" alt="Men's Range">
+                    <div class="dir-meta-overlay">
+                        <h3>GENTLEMEN'S PRIVÉ</h3>
+                        <span>SHOP MEN <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                
+                <a href="women.html" class="directory-card-item">
+                    <img src="Image/image1.jpg" alt="Women's Range">
+                    <div class="dir-meta-overlay">
+                        <h3>FEMME OPULENCE</h3>
+                        <span>SHOP WOMEN <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="body-mist.html" class="directory-card-item">
+                    <img src="Image/coco.jpg" alt="Body Mists">
+                    <div class="dir-meta-overlay">
+                        <h3>REFRESHING MISTS</h3>
+                        <span>EXPLORE MISTS <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="room-fresher.html" class="directory-card-item">
+                    <img src="Image/cherry.jpg" alt="Room Ambience">
+                    <div class="dir-meta-overlay">
+                        <h3>ROOM AMBIENCE</h3>
+                        <span>EXPLORE CANDLES & LOBAN <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-split-workspace">
+        <div class="reviews-split-container">
+            <div class="reviews-left-static-panel">
+                <span class="reviews-mini-tag">REAL REVIEWS</span>
+                <h2 class="reviews-static-title">What Our Luxury Circle Says</h2>
+                <p class="reviews-static-desc">Read honest real-time experiences shared directly by perfume collectors and fragrance connoisseurs across the country.</p>
+                <div class="verified-trust-stamp">
+                    <i class="fas fa-shield-alt"></i> 100% Verified Buyer Feedbacks
+                </div>
+            </div>
+
+            <div class="reviews-right-sliding-panel">
+                <div class="infinite-vertical-track" id="dynamic-reviews-target">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support-ticket-section" class="support-ticket-workspace">
+        <div class="support-container">
+            <div class="support-header-block">
+                <h2>Submit a Support Ticket</h2>
+                <p>Have questions about your order, tracking, or collections? Fill out the details below and our team will get back to you promptly.</p>
+            </div>
+            <form id="afnan-style-ticket-form" class="ticket-form-architecture">
+                <div class="form-row-dual">
+                    <div class="input-field-group">
+                        <label for="ticket-name">Your Full Name <span class="required-star">*</span></label>
+                        <div class="field-icon-wrapper">
+                            <i class="far fa-user input-icon"></i>
+                            <input type="text" id="ticket-name" placeholder="e.g., John Doe" required>
+                        </div>
+                    </div>
+                    <div class="input-field-group">
+                        <label for="ticket-email">Email Address <span class="required-star">*</span></label>
+                        <div class="field-icon-wrapper">
+                            <i class="far fa-envelope input-icon"></i>
+                            <input type="email" id="ticket-email" placeholder="name@domain.com" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row-dual">
+                    <div class="input-field-group">
+                        <label for="ticket-subject">Subject <span class="required-star">*</span></label>
+                        <div class="field-icon-wrapper">
+                            <i class="fas fa-pen-nib input-icon"></i>
+                            <input type="text" id="ticket-subject" placeholder="What can we help you with?" required>
+                        </div>
+                    </div>
+                    <div class="input-field-group">
+                        <label for="ticket-order">Order ID / Reference <span class="optional-label">(Optional)</span></label>
+                        <div class="field-icon-wrapper">
+                            <i class="fas fa-hashtag input-icon"></i>
+                            <input type="text" id="ticket-order" placeholder="e.g., PE-98432">
+                        </div>
+                    </div>
+                </div>
+                <div class="input-field-group">
+                    <label for="ticket-message">Detailed Query Description <span class="required-star">*</span></label>
+                    <textarea id="ticket-message" rows="6" placeholder="Provide complete details regarding your request or concern..." required></textarea>
+                </div>
+                <div class="form-submit-row">
+                    <button type="submit" class="submit-ticket-btn"><i class="far fa-paper-plane"></i> Dispatch Ticket</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="pe-main-footer">
+        <div class="pe-footer-container">
+            <div class="pe-footer-grid">
+                <div class="pe-footer-col pe-brand-col">
+                    <h3 class="pe-footer-logo-title">PERFUME EXPERT</h3>
+                    <p class="pe-brand-tagline">Crafting absolute olfactory excellence. Discover elite perfume fields engineered for maximum sillage and projection.</p>
+                </div>
+                <div class="pe-footer-col">
+                    <h4 class="pe-footer-heading">OUR SECTIONS</h4>
+                    <ul class="pe-footer-links">
+                        <li><a href="men.html">Shop Men</a></li>
+                        <li><a href="women.html">Shop Women</a></li>
+                        <li><a href="body-mist.html">Refreshing Mists</a></li>
+                        <li><a href="room-fresher.html">Room Ambience</a></li>
+                    </ul>
+                </div>
+                <div class="pe-footer-col pe-newsletter-col">
+                    <h4 class="pe-footer-heading">NEWSLETTER</h4>
+                    <p class="pe-newsletter-text">Subscribe to receive updates on exclusive private collections, seasonal sales, and special product releases.</p>
+                    <form class="pe-footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to our luxury circle.'); this.reset();">
+                        <input type="email" placeholder="Your E-mail Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="pe-footer-bottom">
+                <p>&copy; 2026 Perfume Expert. All House Rights Reserved.</p>
+                <div class="pe-payment-gateways">
+                    <i class="fab fa-cc-visa" title="Visa"></i>
+                    <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fas fa-money-bill-wave" title="Cash on Delivery"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="pe-auth-modal" class="modal-backdrop" onclick="closeAuthModal(event)">
+        <div class="modal-surface auth-surface-custom">
+            <button class="modal-close-x" onclick="closeAuthModal(event, true)">&times;</button>
+            
+            <div class="pe-auth-form-block active" id="pe-login-block">
+                <h3 class="pe-auth-heading">Sign In</h3>
+                <p class="pe-auth-sub">Welcome back! Please enter your luxury credentials details.</p>
+                <form class="pe-auth-core-form" onsubmit="event.preventDefault(); alert('Logged into account successfully!'); closeAuthModal(event, true);">
+                    <div class="pe-auth-input-row">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="name@domain.com" required>
+                    </div>
+                    <div class="pe-auth-input-row">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="pe-auth-submit-btn">ACCESS ACCOUNT</button>
+                </form>
+                <p class="pe-auth-switch-text">New to Perfume Expert? <a href="#" onclick="switchAuthForm('signup'); return false;">Create an account</a></p>
+            </div>
+
+            <div class="pe-auth-form-block" id="pe-signup-block">
+                <h3 class="pe-auth-heading">Create Account</h3>
+                <p class="pe-auth-sub">Join our exclusive private circle to discover curated seasonal collections.</p>
+                <form class="pe-auth-core-form" onsubmit="event.preventDefault(); alert('Account registration completed!'); switchAuthForm('login');">
+                    <div class="pe-auth-input-row">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="pe-auth-input-row">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="name@domain.com" required>
+                    </div>
+                    <div class="pe-auth-input-row">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="pe-auth-submit-btn">REGISTER NOW</button>
+                </form>
+                <p class="pe-auth-switch-text">Already have an account? <a href="#" onclick="switchAuthForm('login'); return false;">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/923001234567" class="fixed-whatsapp-trigger" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+  
+
+<!-- -------********************yeh java ki file hy*********************--> 
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      generateInfiniteReviews();
+
+    const ticketForm = document.getElementById("afnan-style-ticket-form");
+
+    if (ticketForm) {
+        ticketForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const clientName =
+                document.getElementById("ticket-name").value;
+
+            alert(`Thank you ${clientName}! Your luxury support ticket dispatch is successful.`);
+
+            ticketForm.reset();
+        });
+    }
+
+});
+
+const peAuthModal = document.getElementById("pe-auth-modal");
+const peLoginBlock = document.getElementById("pe-login-block");
+const peSignupBlock = document.getElementById("pe-signup-block");
+
+function openAuthModal(mode) {
+
+    if (!peAuthModal) return;
+
+    peAuthModal.classList.add("open");
+
+    switchAuthForm(mode);
+}
+
+function closeAuthModal(event, forceClose = false) {
+
+    if (forceClose || event.target === peAuthModal) {
+
+        peAuthModal.classList.remove("open");
+
+    }
+
+}
+
+function switchAuthForm(mode) {
+
+    if (!peLoginBlock || !peSignupBlock) return;
+
+    if (mode === "login") {
+
+        peLoginBlock.classList.add("active");
+
+        peSignupBlock.classList.remove("active");
+
+    }
+
+    else {
+
+        peLoginBlock.classList.remove("active");
+
+        peSignupBlock.classList.add("active");
+
+    }
+
+}
+
+function generateInfiniteReviews() {
+
+    const container =
+        document.getElementById("dynamic-reviews-target");
+
+    if (!container) return;
+
+    const reviews = [
+
+        {
+            name: "Sara Khan",
+            text: "Noir Horizon is absolute magic!"
+        },
+
+        {
+            name: "Ahmed Ali",
+            text: "Amazing fragrance collection."
+        }
+
+    ];
+
+    container.innerHTML = reviews
+        .concat(reviews)
+        .map(r => `
+
+<div class="luxury-feedback-node">
+
+<h4>${r.name}</h4>
+
+<p>${r.text}</p>
+
+</div>
+
+`).join("");
+
+}
+
+</script>
+</body>
+</html>
